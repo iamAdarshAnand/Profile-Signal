@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f5">
+  <meta name="description" content="Review observable account risk signals on Facebook, X, and Instagram.">
+  <title>Profile Signal · Account screening</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <div class="brand"><span class="mark" aria-hidden="true">◈</span> Profile Signal</div>
+      <span class="private"><span aria-hidden="true"></span> On-device analysis</span>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="intro">
+      <div class="eyebrow">SOCIAL ACCOUNT SCREENING</div>
+      <h1>Check a profile<br><em>before you trust it.</em></h1>
+      <p>Record what you can observe on Facebook, X, or Instagram. Get a risk assessment, an explanation, and steps to verify the account yourself.</p>
+    </section>
+    <div class="layout">
+      <form id="screen" class="panel form-panel">
+        <div class="section-top"><div><div class="eyebrow">01 / INPUT</div><h2>Profile observations</h2></div><button class="subtle" type="button" id="demo">Try an example</button></div>
+        <fieldset class="platforms">
+          <legend>Platform</legend>
+          <label><input type="radio" name="platform" value="Facebook" checked><span><b>f</b> Facebook</span></label>
+          <label><input type="radio" name="platform" value="X"><span><b>𝕏</b> X / Twitter</span></label>
+          <label><input type="radio" name="platform" value="Instagram"><span><b>◎</b> Instagram</span></label>
+        </fieldset>
+        <label class="profile" for="profile">Profile name or link <small>optional</small></label>
+        <input id="profile" name="profile" type="text" maxlength="300" autocomplete="off" placeholder="e.g. facebook.com/example">
+        <div class="signal-title"><h3>What did you see?</h3><p>Leave anything you can’t verify as Unknown.</p></div>
+        <div id="signals"></div>
+        <div class="actions"><button class="primary" type="submit">Analyze profile <span aria-hidden="true">↗</span></button><button class="subtle" type="reset">Reset</button></div>
+      </form>
+      <aside class="panel result-panel" aria-labelledby="result-heading">
+        <div class="eyebrow">02 / REPORT</div>
+        <h2 id="result-heading">Risk assessment</h2>
+        <div id="report" aria-live="polite">
+          <div class="empty"><span aria-hidden="true">◈</span><strong>Ready when you are</strong><p>Analyze your observations to see which signals matter and what to check next.</p></div>
+        </div>
+        <div class="note"><strong>How it works</strong><p>A weighted checklist looks for observable signs of impersonation, scams, and spam. The app can’t access social profiles or confirm who owns an account. Your inputs stay in this browser tab.</p></div>
+      </aside>
+    </div>
+    <footer><span>PROFILE SIGNAL</span><span>Use the report as a starting point for manual verification.</span></footer>
+  </main>
+</body>
+</html>
