@@ -34,3 +34,11 @@ The rules are a screening aid. They do not estimate the probability that a profi
 - `dist/index.html` contains the form and report layout.
 - `dist/style.css` styles the responsive interface.
 - `dist/app.js` contains the checklist, scoring, and report rendering.
+
+## Project discovery
+
+**Browser-Based Fake Social Media Profile Risk Checker** — Privacy-friendly browser-based checklist for assessing observable scam, spam and impersonation indicators on social media profiles.
+
+**Related developer searches:** fake profile detection, social media scam checker, impersonation detection, browser security, JavaScript.
+
+**Source:** [Profile-Signal](https://github.com/iamAdarshAnand/Profile-Signal) · **Author:** [Adarsh Anand](https://github.com/iamAdarshAnand)
